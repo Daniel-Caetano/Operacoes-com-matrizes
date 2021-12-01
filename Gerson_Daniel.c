@@ -13,7 +13,6 @@ void gera_numero_aleatorio(float *numeroAleatorio) {
   *numeroAleatorio = rand() % 11;
   *numeroAleatorio = *numeroAleatorio / 10.0;
 }
-
 void imprimir_matriz(float matriz[2][2]) {
 
   for (int i = 0; i < 2; i++) {
@@ -24,7 +23,6 @@ void imprimir_matriz(float matriz[2][2]) {
     printf("                  **\n");
   }
 }
-
 void calcula_matriz_A_B(float matriz[2][2], float matrizA[2][2],
                         float matrizB[2][2], float vetor[2]) {
 
@@ -35,7 +33,6 @@ void calcula_matriz_A_B(float matriz[2][2], float matrizA[2][2],
     }
   }
 }
-
 void gera_matriz_aleatoria(float matriz[2][2]) {
   float numeroAleatorio;
   for (int i = 0; i < 2; i++) {
@@ -45,7 +42,6 @@ void gera_matriz_aleatoria(float matriz[2][2]) {
     }
   }
 }
-
 void gera_vetor_aleatorio(float vetor[2]) {
   float numeroAleatorio;
   gera_numero_aleatorio(&numeroAleatorio);
@@ -53,7 +49,6 @@ void gera_vetor_aleatorio(float vetor[2]) {
   gera_numero_aleatorio(&numeroAleatorio);
   vetor[1] = numeroAleatorio;
 }
-
 int main() {
 
   srand(time(0));
@@ -65,7 +60,7 @@ int main() {
   float matrizB[2][2];
 
   printf("\n***********************************\n");
-  printf("**    Operacoes com Matriz       **");
+  printf("**    Operacoes com Matrizes     **");
   printf("\n**                               **");
   printf("\n***********************************\n");
   printf("**                               **");
